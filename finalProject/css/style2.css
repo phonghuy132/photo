@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Mobile View (Mobile-first approach) */
+  div {
+    width: 100%;
+    margin: 10px;
+    background-color: #f0f0f0; /* Light background color */
+    color: #333; /* Default font color */
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  /* Tablet View (Trigger at 600px) */
+  @media (min-width: 600px) {
+    div {
+      width: 48%; /* Two column grid */
+      border-radius: 10px; /* Rounded corners */
+    }
+  
+    div:last-child {
+      width: 100%; /* Last figure takes up both columns */
+    }
+  }
+  
+  /* Large Screen View (Trigger at 992px) */
+  @media (min-width: 992px) {
+    div {
+      width: 30%; /* Adjust to your preference */
+      border-radius: 0; /* Remove border radius */
+    }
+  }
+  
+  /* Prefers-reduced-motion Media Query */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto; /* Disable smooth scrolling */
+    }
+  }
+  
+  /* Dark Color Scheme Media Query */
+  @media (prefers-color-scheme: dark) {
+    div {
+      background-color: #333; /* Dark background color */
+      color: #fff; /* Lighter font color */
+    }
+  }

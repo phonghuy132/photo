@@ -1,0 +1,65 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #dedede;
+    padding: 5px;
+    margin: 15px;
+    font-size: 25px;
+    font-family:Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family:Arial, sans-serif;
+    font-size: 1.95em;
+}
+
+h2{
+    text-align:center;
+  }
+
+li{
+    margin-top: 20px;
+}
+
+img{
+    border: 5px solid blue;
+    border-radius: 35px;
+    width: 100%;
+  }
+
+.label{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .label {
+    margin-top: 5px;
+  }
+  
+  @media (min-width: 772px) {
+    div {
+      width: 45%;
+    }
+    img {
+      max-height: 30vh;
+    }
+  }
+  
+  @media (min-width: 998px) {
+    div {
+      width: 30%;
+    }
+  }
